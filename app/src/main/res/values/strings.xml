@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChatBot</string>
+
+    <string name="prompt_name">Type your username</string>
+    <string name="action_sign_in">Login</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_name">This field is not valid</string>
+    <string name="chat_label">Chat</string>
+    <string name="loading_label">Loading...</string>
+    <string name="wait_label">please wait...</string>
+    <string name="author">ChatBot demo by</string>
+    <string name="me">Stefano Gramantieri</string>
+</resources>

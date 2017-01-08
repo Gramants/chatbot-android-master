@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/chat_view_container"
+        android:layout_width="wrap_content"
+        android:minWidth="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        android:background="@drawable/bubble_out">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/chat_bubble_text"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/BasicFont"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="2dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chat_bubble_profile"
+                android:layout_width="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_launcher"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#77000000"/>
+
+            <TextView
+                android:id="@+id/chat_bubble_user"
+                android:gravity="bottom|end"
+                android:layout_gravity="bottom|end"
+                android:layout_toRightOf="@+id/chat_bubble_profile"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/FashionFont"
+                />
+
+            <TextView
+            android:id="@+id/chat_bubble_time"
+            android:gravity="bottom|end"
+            android:layout_gravity="bottom|end"
+            android:lines="1"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:paddingLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="@style/TitleFont"
+            />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
